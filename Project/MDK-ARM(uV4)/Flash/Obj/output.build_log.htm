@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.21.1.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 121 Microsoft, Microsoft, LIC=UB412-9MCFN-8WT2D-8FI3D-2DWAP-0BKZR
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.21a
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 3 (build 300)
+Assembler:       Armasm.exe V5.06 update 3 (build 300)
+Linker/Locator:  ArmLink.exe V5.06 update 3 (build 300)
+Library Manager: ArmAr.exe V5.06 update 3 (build 300)
+Hex Converter:   FromElf.exe V5.06 update 3 (build 300)
+CPU DLL:         SARMCM3.DLL V5.21a
+Dialog DLL:      DARMSTM.DLL V1.66.0.1
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TARMSTM.DLL V1.65.0.0
+ 
+<h2>Project:</h2>
+H:\进行时\CS_System_Program\Project\MDK-ARM(uV4)\project.uvprojx
+Project File Date:  10/08/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 3 (build 300)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Flash'
+compiling bsp_key.c...
+compiling bsp_led.c...
+compiling bsp_user_lib.c...
+compiling app.c...
+..\..\User\app.c(197): warning:  #177-D: variable "ucKeyCode" was declared but never referenced
+  	uint8_t  ucKeyCode;
+..\..\User\app.c(198): warning:  #177-D: variable "ucMsg" was declared but never referenced
+  	uint8_t  ucMsg[4], ucTemp = 0;
+..\..\User\app.c(198): warning:  #177-D: variable "ucTemp" was declared but never referenced
+  	uint8_t  ucMsg[4], ucTemp = 0;
+..\..\User\app.c(363): warning:  #177-D: function "DispTaskInfo" was declared but never referenced
+  static void DispTaskInfo(void)
+..\..\User\app.c: 4 warnings, 0 errors
+compiling bsp.c...
+compiling bsp_uart_fifo.c...
+compiling bsp_att7022eu.c...
+..\..\User\bsp\src\bsp_att7022eu.c(248): warning:  #223-D: function "READ_Att7022" declared implicitly
+    Device_ID = READ_Att7022(0x00);	 // Device ID 
+..\..\User\bsp\src\bsp_att7022eu.c(254): warning:  #223-D: function "READ_Att7022" declared implicitly
+  	Device_ID = READ_Att7022(0x00);	  // Device ID 
+..\..\User\bsp\src\bsp_att7022eu.c(290): warning:  #223-D: function "READ_Att7022" declared implicitly
+  		Device_ID_buff = READ_Att7022(0x00);	  // Device ID 
+..\..\User\bsp\src\bsp_att7022eu.c(262): warning:  #550-D: variable "TempSSAPwoer" was set but never used
+  	uint32_t TempSSAPwoer[3];
+..\..\User\bsp\src\bsp_att7022eu.c: 4 warnings, 0 errors
+compiling bsp_nb73.c...
+linking...
+.\Flash\Obj\output.axf: Error: L6218E: Undefined symbol READ_Att7022 (referred from bsp_att7022eu.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+".\Flash\Obj\output.axf" - 1 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  H:\进行时\CS_System_Program\Project\MDK-ARM(uV4)\RTE
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Target not created.
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
